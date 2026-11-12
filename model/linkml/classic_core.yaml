@@ -620,47 +620,26 @@ enums:
       Unknown:
         todos: [map this to an ontology]
   construct_domain_enum:
+    description: >-
+      Approved CLASSIC construct domains (DSA-approved; see the
+      measuredConstruct -> constructDomain mapping doc and CLASSIC-87).
     permissible_values:
-      Depression:
-        todos: [map this to an ontology (MONDO/HP/NCIT)]
+      Mental Health & Emotional Functioning:
+        todos: [map this to an ontology (CLASSIC-86)]
+      Psychological & Self-Regulatory Functioning:
+        todos: [map this to an ontology (CLASSIC-86)]
       Cognitive:
-        todos: [map this to an ontology]
-      Neurological & Neurobehavioral:
-        todos: [map this to an ontology]
-      Neuroimaging:
-        todos: [map this to an ontology]
+        todos: [map this to an ontology (CLASSIC-86)]
       Physical Health & Lifestyle:
-        todos: [map this to an ontology]
-      Developmental & Functional:
-        todos: [map this to an ontology]
-      Environmental & Contextual:
-        todos: [map this to an ontology]
-      Administrative & Study Design:
-        todos: [map this to an ontology]
-      Psychiatric Disorder - Mood:
-        todos: [map this to an ontology (MONDO)]
-      Psychiatric Disorder - Substance Abuse:
-        todos: [map this to an ontology (MONDO)]
-      Psychiatric Disorder - Anxiety:
-        todos: [map this to an ontology (MONDO)]
-      Psychiatric Disorder - Hypochondriasis:
-        todos: [map this to an ontology (MONDO)]
-      Psychiatric Disorder - Anorexia Nervosa:
-        todos: [map this to an ontology (MONDO)]
-      Psychiatric Disorder - Eating Disorder:
-        todos: [map this to an ontology (MONDO)]
-      Psychiatric Disorder - Bulimia Nervosa:
-        todos: [map this to an ontology (MONDO)]
-      Psychiatric Disorder - ADHD:
-        todos: [map this to an ontology (MONDO)]
-      Psychiatric Disorder - Bereavement:
-        todos: [map this to an ontology]
-      Psychiatric Disorder:
-        todos: [map this to an ontology (MONDO)]
+        todos: [map this to an ontology (CLASSIC-86)]
+      Functional Ability & Daily Functioning:
+        todos: [map this to an ontology (CLASSIC-86)]
+      Clinical & Medical History:
+        todos: [map this to an ontology (CLASSIC-86)]
+      Demographics:
+        todos: [map this to an ontology (CLASSIC-86)]
       Other:
-        todos: [map this to an ontology]
-      Unknown:
-        todos: [map this to an ontology]
+        todos: [map this to an ontology (CLASSIC-86)]
   inclusion_tags_enum:
     permissible_values:
       Age-based eligibility:

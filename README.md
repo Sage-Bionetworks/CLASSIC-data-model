@@ -36,6 +36,7 @@ Contributions can be developed progressively: begin with study identity and gove
 | [model/linkml/classic_core.yaml](model/linkml/classic_core.yaml) | Shared identifiers, scope fields, mixins, and controlled vocabularies. |
 | `model/linkml/tier*.yaml` | Individual LinkML tier definitions. |
 | `model/linkml/tier*.schema.json` | JSON Schema representations alongside the LinkML definitions. |
+| [model/mappings/construct_domain_mapping.csv](model/mappings/construct_domain_mapping.csv) | Approved `measuredConstruct` → `constructDomain` lookup used to populate `constructDomain` in Tier 5 tables. |
 | [docs/](docs/) | Schema browser and its metadata index, `data.json`. |
 | [scripts/register_synapse_schemas.py](scripts/register_synapse_schemas.py) | Registers tier JSON schemas in Synapse with semantic versions. |
 | [scripts/build_pages_index.py](scripts/build_pages_index.py) | Builds the browser index from local tier schemas and, when available, Synapse registration metadata. |

@@ -198,6 +198,21 @@
         "Unknown"
       ]
     },
+    "constructDomain": {
+      "type": "string",
+      "title": "constructDomain",
+      "description": "Broad domain of the measured construct, derived from measuredConstruct using the approved measuredConstruct -> constructDomain mapping.",
+      "enum": [
+        "Mental Health & Emotional Functioning",
+        "Psychological & Self-Regulatory Functioning",
+        "Cognitive",
+        "Physical Health & Lifestyle",
+        "Functional Ability & Daily Functioning",
+        "Clinical & Medical History",
+        "Demographics",
+        "Other"
+      ]
+    },
     "constructDescription": {
       "type": "string",
       "title": "constructDescription",
