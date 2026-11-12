@@ -50,6 +50,7 @@ classes:
       - sensors
       - measureID
       - measuredConstruct
+      - constructDomain
       - constructDescription
       - measureType
       - isValidatedMeasure
@@ -120,6 +121,12 @@ slots:
       A conceptual domain or construct that a study collected data on (e.g.,
       depression, working memory, physical activity).
     range: measured_construct_enum
+  constructDomain:
+    title: constructDomain
+    description: >-
+      Broad domain of the measured construct, derived from measuredConstruct
+      using the approved measuredConstruct -> constructDomain mapping.
+    range: construct_domain_enum
   constructDescription:
     title: constructDescription
     description: One-sentence description of how the construct was operationalized in the study.

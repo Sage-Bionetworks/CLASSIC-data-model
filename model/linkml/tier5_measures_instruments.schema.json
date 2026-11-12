@@ -175,26 +175,14 @@
         "ConstructDomainEnum": {
             "description": "",
             "enum": [
-                "Depression",
+                "Mental Health & Emotional Functioning",
+                "Psychological & Self-Regulatory Functioning",
                 "Cognitive",
-                "Neurological & Neurobehavioral",
-                "Neuroimaging",
                 "Physical Health & Lifestyle",
-                "Developmental & Functional",
-                "Environmental & Contextual",
-                "Administrative & Study Design",
-                "Psychiatric Disorder - Mood",
-                "Psychiatric Disorder - Substance Abuse",
-                "Psychiatric Disorder - Anxiety",
-                "Psychiatric Disorder - Hypochondriasis",
-                "Psychiatric Disorder - Anorexia Nervosa",
-                "Psychiatric Disorder - Eating Disorder",
-                "Psychiatric Disorder - Bulimia Nervosa",
-                "Psychiatric Disorder - ADHD",
-                "Psychiatric Disorder - Bereavement",
-                "Psychiatric Disorder",
-                "Other",
-                "Unknown"
+                "Functional Ability & Daily Functioning",
+                "Clinical & Medical History",
+                "Demographics",
+                "Other"
             ],
             "title": "ConstructDomainEnum",
             "type": "string"
@@ -582,6 +570,10 @@
                         "string",
                         "null"
                     ]
+                },
+                "constructDomain": {
+                    "$ref": "#/$defs/ConstructDomainEnum",
+                    "description": "Broad domain of the measured construct, derived from measuredConstruct using the approved measuredConstruct -> constructDomain mapping."
                 },
                 "dataAvailabilitySummary": {
                     "description": "An aggregate description of the amount and demographic composition of available data for a study, cohort, or variable, provided without individual-level records.",
