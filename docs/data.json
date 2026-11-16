@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-10-15T22:09:06+00:00",
+  "generated_on": "2026-11-16T16:53:04+00:00",
   "organization": "org.synapse.classic",
   "repo": "Sage-Bionetworks/CLASSIC",
   "branch": "main",
@@ -477,7 +477,7 @@
       "description": "Describe who is in the study and how the cohort was defined/ascertained, enough for a user to judge relevance before requesting access.",
       "name": "tier3.cohortPopulation",
       "uri": "org.synapse.classic-tier3.cohortPopulation",
-      "properties": 32,
+      "properties": 31,
       "required": [
         "studyID"
       ],
@@ -535,34 +535,6 @@
             "Administrative/Registry-Based",
             "Hybrid",
             "Other"
-          ]
-        },
-        {
-          "name": "constructDomain",
-          "type": "string",
-          "required": false,
-          "description": "Domain of measured construct",
-          "enum": [
-            "Depression",
-            "Cognitive",
-            "Neurological & Neurobehavioral",
-            "Neuroimaging",
-            "Physical Health & Lifestyle",
-            "Developmental & Functional",
-            "Environmental & Contextual",
-            "Administrative & Study Design",
-            "Psychiatric Disorder - Mood",
-            "Psychiatric Disorder - Substance Abuse",
-            "Psychiatric Disorder - Anxiety",
-            "Psychiatric Disorder - Hypochondriasis",
-            "Psychiatric Disorder - Anorexia Nervosa",
-            "Psychiatric Disorder - Eating Disorder",
-            "Psychiatric Disorder - Bulimia Nervosa",
-            "Psychiatric Disorder - ADHD",
-            "Psychiatric Disorder - Bereavement",
-            "Psychiatric Disorder",
-            "Other",
-            "Unknown"
           ]
         },
         {
@@ -883,7 +855,7 @@
       "source": "model/Tier 3/Tier_3_Cohort_Population.schema.json",
       "source_url": "https://github.com/Sage-Bionetworks/CLASSIC/blob/main/model/Tier%203/Tier_3_Cohort_Population.schema.json",
       "raw_url": "https://raw.githubusercontent.com/Sage-Bionetworks/CLASSIC/main/model/Tier%203/Tier_3_Cohort_Population.schema.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "schema_id": "10609",
       "created_on": "2026-06-24T19:23:51.737Z",
       "created_by": "3459953"
@@ -1286,7 +1258,7 @@
       "description": "Describe what was measured (constructs, instrument identity, administration modality/technology) at a level that supports discovery and basic interpretability. Make derived outputs interpretable (what a score/variable represents, and its general derivation form), especially when item/trial-level data aren’t shared. Help users answer “is there enough data for my question?” without accessing participant-level files, counts, ranges, units, or timepoint-scoped summaries.",
       "name": "tier5.measuresInstruments",
       "uri": "org.synapse.classic-tier5.measuresInstruments",
-      "properties": 47,
+      "properties": 48,
       "required": [
         "studyID"
       ],
@@ -1371,6 +1343,22 @@
           "required": false,
           "description": "One-sentence description of how the construct was operationalized in the study.",
           "enum": null
+        },
+        {
+          "name": "constructDomain",
+          "type": "string",
+          "required": false,
+          "description": "Broad domain of the measured construct, derived from measuredConstruct using the approved measuredConstruct -> constructDomain mapping.",
+          "enum": [
+            "Mental Health & Emotional Functioning",
+            "Psychological & Self-Regulatory Functioning",
+            "Cognitive",
+            "Physical Health & Lifestyle",
+            "Functional Ability & Daily Functioning",
+            "Clinical & Medical History",
+            "Demographics",
+            "Other"
+          ]
         },
         {
           "name": "dataAvailabilitySummary",
@@ -1838,7 +1826,7 @@
       "source": "model/Tier 5/Tier_5_Measures_Instruments_Derived_Scores_Variables_Availability_Summaries.schema.json",
       "source_url": "https://github.com/Sage-Bionetworks/CLASSIC/blob/main/model/Tier%205/Tier_5_Measures_Instruments_Derived_Scores_Variables_Availability_Summaries.schema.json",
       "raw_url": "https://raw.githubusercontent.com/Sage-Bionetworks/CLASSIC/main/model/Tier%205/Tier_5_Measures_Instruments_Derived_Scores_Variables_Availability_Summaries.schema.json",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "schema_id": "10611",
       "created_on": "2026-06-24T19:23:54.391Z",
       "created_by": "3459953"
