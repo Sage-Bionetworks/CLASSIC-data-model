@@ -175,10 +175,6 @@
                     "$ref": "#/$defs/AscertainmentContextEnum",
                     "description": "Where participants came from: the categories describe sampling context, independent of disease focus."
                 },
-                "constructDomain": {
-                    "$ref": "#/$defs/ConstructDomainEnum",
-                    "description": "Domain of measured construct."
-                },
                 "criteriaSelectionIntensity": {
                     "$ref": "#/$defs/CriteriaSelectionIntensityEnum",
                     "description": "Overall restrictiveness of inclusion/exclusion criteria."
@@ -344,26 +340,14 @@
         "ConstructDomainEnum": {
             "description": "",
             "enum": [
-                "Depression",
+                "Mental Health & Emotional Functioning",
+                "Psychological & Self-Regulatory Functioning",
                 "Cognitive",
-                "Neurological & Neurobehavioral",
-                "Neuroimaging",
                 "Physical Health & Lifestyle",
-                "Developmental & Functional",
-                "Environmental & Contextual",
-                "Administrative & Study Design",
-                "Psychiatric Disorder - Mood",
-                "Psychiatric Disorder - Substance Abuse",
-                "Psychiatric Disorder - Anxiety",
-                "Psychiatric Disorder - Hypochondriasis",
-                "Psychiatric Disorder - Anorexia Nervosa",
-                "Psychiatric Disorder - Eating Disorder",
-                "Psychiatric Disorder - Bulimia Nervosa",
-                "Psychiatric Disorder - ADHD",
-                "Psychiatric Disorder - Bereavement",
-                "Psychiatric Disorder",
-                "Other",
-                "Unknown"
+                "Functional Ability & Daily Functioning",
+                "Clinical & Medical History",
+                "Demographics",
+                "Other"
             ],
             "title": "ConstructDomainEnum",
             "type": "string"

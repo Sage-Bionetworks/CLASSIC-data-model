@@ -52,7 +52,6 @@ classes:
       - ethnicityDistribution
       - generation
       - relationToOriginal
-      - constructDomain
       - eligibilityCriteriaSummary
       - eligibilityCriteriaURL
       - inclusionTags
@@ -159,10 +158,6 @@ slots:
       Describes the familial relationship(s) of participants to the initially
       enrolled participant(s) in a family-based cohort.
     range: relation_to_original_enum
-  constructDomain:
-    title: constructDomain
-    description: Domain of measured construct.
-    range: construct_domain_enum
   eligibilityCriteriaSummary:
     title: eligibilityCriteriaSummary
     description: >-
